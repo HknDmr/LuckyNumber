@@ -14,13 +14,14 @@ public class Main {
         int luckyNumber = 0;
 
         if (age<15) {
+            // mod is remainder of dividend / divider
             luckyNumber= (numberOfLetters*age) %10;
         } else if (age<20) {
             luckyNumber= (age*age-numberOfLetters) %10;
         } else if (age<40) {
             luckyNumber=(numberOfLetters-age) %10;
         } else if (age<60) {
-         luckyNumber=(age+numberOfLetters) %10;
+            luckyNumber=(age+numberOfLetters) %10;
         } else {
             luckyNumber=(numberOfLetters*5-age) %10;
         }
