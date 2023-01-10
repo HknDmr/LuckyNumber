@@ -13,26 +13,18 @@ public class Main {
         int numberOfLetters = name.length();
         int luckyNumber = 0;
 
-        if (age<15)
-        {
+        if (age<15) {
             luckyNumber= (numberOfLetters*age) %10;
-        }
-        if (age<20)
-        {
+        } else if (age<20) {
             luckyNumber= (age*age-numberOfLetters) %10;
-        }
-        if (age<40)
-        {
+        } else if (age<40) {
             luckyNumber=(numberOfLetters-age) %10;
-
-        } else if (age<60)
-        {
+        } else if (age<60) {
          luckyNumber=(age+numberOfLetters) %10;
-        }
-        else
-        {
+        } else {
             luckyNumber=(numberOfLetters*5-age) %10;
         }
+
         if (luckyNumber<0)
             luckyNumber = luckyNumber * -1;
 
